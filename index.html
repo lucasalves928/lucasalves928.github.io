@@ -1,73 +1,44 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Lucas Alves</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .jumbotron {
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: white;
-        }
-        .card {
-            transition: transform 0.2s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <title>Página Bonita com Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="jumbotron text-center">
-        <h1 class="display-4">Bem-vindo ao Site de Lucas Alves</h1>
-        <p class="lead">Este é um exemplo de uma página bonita usando Bootstrap.</p>
-    </header>
-    <main class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagem 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do Card 1</h5>
-                        <p class="card-text">Descrição breve do conteúdo do card 1.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagem 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do Card 2</h5>
-                        <p class="card-text">Descrição breve do conteúdo do card 2.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="Imagem 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Título do Card 3</h5>
-                        <p class="card-text">Descrição breve do conteúdo do card 3.</p>
-                        <a href="#" class="btn btn-primary">Saiba mais</a>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-principal">
+        <a class="navbar-brand" href="#" id="navbar-brand">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto" id="menu-principal">
+                <li class="nav-item active" id="nav-item-home">
+                    <a class="nav-link" href="#" id="link-home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="nav-item-sobre">
+                    <a class="nav-link" href="#" id="link-sobre">Sobre</a>
+                </li>
+                <li class="nav-item" id="nav-item-contato">
+                    <a class="nav-link" href="#" id="link-contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5" id="conteudo-principal">
+        <div class="row" id="linha-principal">
+            <div class="col-md-12 text-center" id="coluna-principal">
+                <h1 class="display-4" id="titulo-principal">Oi, Ronei!</h1>
+                <p class="lead" id="texto-principal">Este é o conteúdo da página.</p>
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNY2BRskeZOXXqaA_n4lRkEVzfB9D7w3pAx7UDUrsy_TR6nwGraQW_Ca70PEWF6smEer2ZbSDmvx2jaOQVit7hscTGsEd5S4cJ2NcOR5VPR63Zdiy4" alt="Imagem inserida" class="img-fluid" id="imagem-principal">
             </div>
         </div>
-    </main>
-    <footer class="text-center py-4">
-        <p>&copy; 2024 Lucas Alves</p>
-    </footer>
-    <!-- Bootstrap JS and dependencies -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
